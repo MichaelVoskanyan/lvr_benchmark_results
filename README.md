@@ -85,7 +85,8 @@ The AST JSON files in this repository were generated using Clang’s JSON AST du
 ```
 clang -x c -DHAVE_CONFIG_H -I. -g -O0 -static -Wall -W \
   -Xclang -ast-dump=json -fsyntax-only targetfile.c \
-  > output.ast.json```
+  > output.ast.json
+```
 
 The exact compilation flags may vary slightly by benchmark, depending on the project layout and build assumptions required for parsing the target file.
 
